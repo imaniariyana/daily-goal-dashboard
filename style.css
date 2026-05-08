@@ -1,5 +1,6 @@
 body {
-  background-color: rgb(253, 217, 223);
+  background-color: rgb(246, 231, 242);
+  padding: 60px;
 }
 
 .goals {
@@ -24,4 +25,33 @@ body {
 
 .goal-list {
   list-style-type: none;
+}
+
+.goal-item {
+  background-color: #fff;
+  border: 1px solid #f098d8;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.goal-form {
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+form input {
+  border-radius: 15px;
+  padding: 8px;
+  background: #ffdbf5;
+  border: 1px solid #f098d8;
+  width: 70%;
+  padding: 16px 16px;
+}
+
+form button {
+  border-radius: 15px;
+  background: #ea45be;
+  border: none;
+  padding: 8px 16px;
 }
