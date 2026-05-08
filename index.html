@@ -4,19 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daily Dashboard App</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main class="dashboard">
       <h1>Daily Dashboard</h1>
 
       <section class="goals">
-        <h2>Today's Goals</h2>
-        <ul>
-          <li>Complete project report</li>
+        <div class="goals-header">
+          <h2>Today's Goals</h2>
+          <p class="progress">0/3 completed</p>
+        </div>
+        <ul class="goal-list">
+          <li>project report</li>
           <li>Go for a 30-minute run</li>
           <li>Read 20 pages of a book</li>
         </ul>
+        <button class="add-goal">Add Goal</button>
       </section>
     </main>
   </body>

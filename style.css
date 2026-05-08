@@ -1,0 +1,27 @@
+body {
+  background-color: rgb(253, 217, 223);
+}
+
+.goals {
+  background-color: #fff;
+  padding: 32px;
+  border-radius: 24px;
+}
+
+.goals-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress {
+  font-size: 14px;
+  color: #db3db0;
+  border-radius: 24px;
+  background: #f098d8;
+  padding: 8px 14px;
+}
+
+.goal-list {
+  list-style-type: none;
+}
