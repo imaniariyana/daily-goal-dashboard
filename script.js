@@ -1,8 +1,17 @@
 const goalForm = document.querySelector(".goal-form");
 const goalInput = document.getElementById("goal-input");
 const goalList = document.querySelector(".goal-list");
+const progress = document.querySelector(".progress");
 
-goalForm.addEventListener("submit", function (evt) {
+function updateProgress() {  
+  const totalGoals = goalList.children.length;
+  const completedGoals = goalList.querySelectorAll(
+    ".goal-checkbox:checked",
+  ).length;
+  progress.textContent = `${completedGoals}/${totalGoals} completed`;
+}
+
+goalForm.addEventListener("submit", function (evt) { 
   evt.preventDefault();
 
   const goalText = goalInput.value.trim();
@@ -29,8 +38,15 @@ goalForm.addEventListener("submit", function (evt) {
   const deleteBtn = li.querySelector(".delete-btn");
   deleteBtn.addEventListener("click", () => {
     li.remove();
+    updateProgress();
+  });
+
+  const checkbox = li.querySelector(".goal-checkbox");
+  checkbox.addEventListener("change", () => {
+    updateProgress();
   });
 
   goalList.appendChild(li);
+  updateProgress();
   goalForm.reset();
 });
