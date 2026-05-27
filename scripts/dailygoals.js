@@ -3,7 +3,7 @@ const goalInput = document.getElementById("goal-input");
 const goalList = document.querySelector(".goal-list");
 const progress = document.querySelector(".progress");
 
-function updateProgress() {  
+function updateProgress() {
   const totalGoals = goalList.children.length;
   const completedGoals = goalList.querySelectorAll(
     ".goal-checkbox:checked",
@@ -11,7 +11,7 @@ function updateProgress() {
   progress.textContent = `${completedGoals}/${totalGoals} completed`;
 }
 
-goalForm.addEventListener("submit", function (evt) { 
+goalForm.addEventListener("submit", function (evt) {
   evt.preventDefault();
 
   const goalText = goalInput.value.trim();
@@ -50,3 +50,7 @@ goalForm.addEventListener("submit", function (evt) {
   updateProgress();
   goalForm.reset();
 });
+
+export function initDailyTracker() {
+  console.log("daily tracker working");
+}
