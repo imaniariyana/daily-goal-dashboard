@@ -1,0 +1,59 @@
+.mood-tracker,
+.water-tracker {
+  background: #fff;
+  border-radius: 24px;
+  padding: 32px;
+  margin-top: 32px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+  margin: 0 0 24px;
+  font-size: 24px;
+}
+
+.mood-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.mood-btn {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  background: #fff;
+  padding: 24px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.mood-btn span {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.mood-btn_active {
+  background: #eaf6ff;
+  border-color: #4da3ff;
+}
+
+.mood-message {
+  margin-top: 24px;
+  padding: 14px;
+  border-radius: 14px;
+  background: #ffe3f1;
+  color: #db3db0;
+  text-align: center;
+  font-weight: 600;
+}
+
+.mood-tracker h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.mood-message {
+  font-family: "DM Sans", sans-serif;
+}

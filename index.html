@@ -17,10 +17,12 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
   </head>
   <body>
     <main class="dashboard">
       <h1>Daily Dashboard</h1>
+      <p id="current-date"></p>
 
       <section class="goals">
         <div class="goals-header">
@@ -59,7 +61,65 @@
 
         <div id="habit-list"></div>
       </section>
+      <section class="mood-tracker">
+        <h2 class="section-title">💗 How are you feeling?</h2>
+
+        <div class="mood-grid">
+          <button class="mood-btn" data-mood="happy">
+            😊<span>Happy</span>
+          </button>
+          <button class="mood-btn" data-mood="calm">😌<span>Calm</span></button>
+          <button class="mood-btn" data-mood="loved">
+            😍<span>Loved</span>
+          </button>
+          <button class="mood-btn" data-mood="grateful">
+            🥰<span>Grateful</span>
+          </button>
+          <button class="mood-btn" data-mood="tired">
+            😔<span>Tired</span>
+          </button>
+          <button class="mood-btn" data-mood="anxious">
+            😰<span>Anxious</span>
+          </button>
+        </div>
+
+        <p class="mood-message">Select your mood for today</p>
+      </section>
+
+      <section class="water-tracker">
+        <div class="water-header">
+          <h2 class="section-title">💧 Water Intake</h2>
+          <span class="water-label">glasses</span>
+        </div>
+
+        <p class="water-count">0/8</p>
+
+        <div class="water-progress">
+          <div class="water-progress-fill"></div>
+        </div>
+
+        <div class="water-grid">
+          <button class="water-btn">💧</button>
+          <button class="water-btn">💧</button>
+          <button class="water-btn">💧</button>
+          <button class="water-btn">💧</button>
+          <button class="water-btn">💧</button>
+          <button class="water-btn">💧</button>
+          <button class="water-btn">💧</button>
+          <button class="water-btn">💧</button>
+        </div>
+      </section>
+      <section class="quote-card">
+        <button type="button" class="quote-refresh-btn">↻</button>
+
+        <p class="quote-mark">❞</p>
+        <p class="quote-text">"Glow up and show up."</p>
+        <p class="quote-author">— Unknown</p>
+      </section>
     </main>
+    <footer class="footer">
+      <p>Designed & Developed by Imani Bennett ✨</p>
+    </footer>
     <script type="module" src="./scripts/index.js"></script>
   </body>
 </html>

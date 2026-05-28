@@ -1,8 +1,20 @@
 body {
-  background-color: rgb(247, 235, 243);
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)),
+    url("../images/pink-background.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
   padding: 60px;
 }
 
+.dashboard {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 .dashboard h1 {
   color: #f93fc8;
   font-family: "DM Sans", sans-serif;
