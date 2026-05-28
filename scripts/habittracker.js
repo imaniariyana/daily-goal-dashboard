@@ -1,5 +1,4 @@
 const habitForm = document.querySelector("#habit-form");
-const habitEmojiInput = document.querySelector("#habit-emoji");
 const habitNameInput = document.querySelector("#habit-name");
 const habitList = document.querySelector("#habit-list");
 
@@ -45,7 +44,7 @@ habitForm.addEventListener("submit", (evt) => {
 
   const newHabit = {
     id: Date.now(),
-    emoji: habitEmojiInput.value || "✨",
+    emoji: "✨",
     name: habitNameInput.value,
     days: {
       Mon: false,

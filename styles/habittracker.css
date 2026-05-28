@@ -20,3 +20,26 @@
   color: white;
   font-size: 20px;
 }
+.habit-card {
+  margin-top: 16px;
+  background: #fff;
+  padding: 60px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.habit-card h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  margin: 0;
+}
+
+#habit-name {
+  border-radius: 15px;
+  padding: 8px;
+  background: #ffdbf5;
+  border: 1px solid #f098d8;
+  flex: 1;
+
+  font-family: "DM Sans", sans-serif;
+}
